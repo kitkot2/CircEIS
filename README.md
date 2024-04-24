@@ -1,7 +1,9 @@
 <a name="readme-top"></a>
+
 <br />
 <div align="center">
   <a href="https://github.com/kitkot2/CircEIS">
+    <img src="img/circeis.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">CircEIS</h3>
