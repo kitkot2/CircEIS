@@ -25,7 +25,7 @@
     <li>
       <a href="#About">About</a>
       <ul>
-        <li><a href="#Main_libraries">Main libraries</a></li>
+        <li><a href="#Main libraries">Main libraries</a></li>
       </ul>
     </li>
     <li><a href="#Setup">Setup</a></li>
@@ -40,16 +40,16 @@ CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. I
 
 To enhance fitting accuracy in the presence of significant noise, several data 'cleaning' methods have been implemented.
 
-This tool can be useful in EIS-related fields as a main analysis method or complementing conventional circuit model fitting approaches by providing reliable reference values.
+This tool can be useful in EIS-related fields as a main analysis method or as an adittion to conventional circuit model fitting approaches by providing reliable reference values.
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
 ### Main libraries
 
-pandas
-scipy
-numpy
-matplotlib
+- pandas
+- scipy
+- numpy
+- matplotlib
 
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
