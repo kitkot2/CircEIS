@@ -47,7 +47,7 @@
 
 1. Copy repository
    ```sh
-   git clone https://github.com/kitkot2/tgbot_project.git
+   git clone https://github.com/kitkot2/CircEIS.git
    ```
    or download .zip file
 2. Make shure you have python and pip installed
