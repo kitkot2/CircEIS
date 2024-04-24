@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+import pandas as pd
 import numpy as np
 from math import pi
 from functions import math
@@ -60,7 +61,14 @@ def plot_data_with_circumferences(Re : list, Im : list, circ_data : list):
     plt.show()
     
 def circuferences_p(circ_data : list):
-    i = 0
-    for elem in circ_data:
-        print('Circ_'+str(i+1)+': Res = '+str(math.right_intersection_with_ox(elem[0], elem[1], elem[2]))+', x_c: '+str(elem[0])+', y_c: '+str(elem[1])+', R: '+str(elem[2]))
-        i += 1
+    
+    results = []
+
+    for x, y, R in circ_data:
+        result = math.right_intersection_with_ox(x, y, R)
+        results.append(result)
+
+    df = pd.DataFrame(circ_data, index=range(1, len(circ_data) + 1),columns=['x_c', 'y_c', 'Radius'])
+    df['R, Ohm'] = results
+
+    print(df)
