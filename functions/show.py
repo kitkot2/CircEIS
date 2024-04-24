@@ -1,6 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 from math import pi
+from functions import math
 
 def plot_data(Re : list, Im : list):
     # draw
@@ -57,3 +58,9 @@ def plot_data_with_circumferences(Re : list, Im : list, circ_data : list):
     plt.axis('equal')
     plt.grid()
     plt.show()
+    
+def circuferences_p(circ_data : list):
+    i = 0
+    for elem in circ_data:
+        print('Circ_'+str(i+1)+': Res = '+str(math.right_intersection_with_ox(elem[0], elem[1], elem[2]))+', x_c: '+str(elem[0])+', y_c: '+str(elem[1])+', R: '+str(elem[2]))
+        i += 1

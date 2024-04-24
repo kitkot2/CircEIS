@@ -10,7 +10,7 @@ def correct_path(file_name : str):
     else:
         sys.exit('Error: Wrong file name, please try again')
 
-def EIS_txt(file_name : str):
+def EIS_txt_to_csv(file_name : str):
     
     txt_path = 'data/'+file_name+'.txt'
     csv_path = 'data/'+file_name+'.csv'
@@ -33,7 +33,7 @@ def EIS_txt(file_name : str):
     os.rename(txt_path, csv_path)
 
 #Not finished
-def DC_txt(file_name : str):
+def DC_txt_to_csv(file_name : str):
     txt_path = 'data/'+file_name+'.txt'
     csv_path = 'data/'+file_name+'.csv'
     if os.path.isfile(csv_path):
