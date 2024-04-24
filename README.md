@@ -4,10 +4,10 @@
   <a href="https://github.com/kitkot2/CircEIS">
   </a>
 
-<h3 align="center">Circumference fitting for EIS</h3>
+<h3 align="center">CircEIS</h3>
 
   <p align="center">
-    Text
+    Circumference fitting for EIS
     <br />
     <a href="https://github.com/kitkot2/CircEIS"><strong>Files</strong></a>
     <br />
