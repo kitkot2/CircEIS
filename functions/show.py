@@ -14,3 +14,4 @@ def plot_data(Re : list, Im : list):
     plt.gcf().set_size_inches(size)
 
     plt.grid()
+    plt.show()

@@ -1,4 +1,13 @@
 import os
+import sys
+
+def correct_path(file_name : str):
+    txt_path = 'data/'+file_name+'.txt'
+    csv_path = 'data/'+file_name+'.csv'
+    if os.path.isfile(csv_path) or os.path.isfile(txt_path):
+        return True
+    else:
+        sys.exit('Error: Wrong file name, please try again')
 
 def EIS_txt(file_name : str):
     
@@ -24,6 +33,8 @@ def EIS_txt(file_name : str):
 
 
 def DC_txt(file_name : str):
+    txt_path = 'data/'+file_name+'.txt'
+    csv_path = 'data/'+file_name+'.csv'
     if os.path.isfile(csv_path):
         print('no need for data prep., csv file already exists')
         return
