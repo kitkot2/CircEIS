@@ -25,7 +25,7 @@
     <li>
       <a href="#About">About</a>
       <ul>
-        <li><a href="#Libraries">Libraries</a></li>
+        <li><a href="#Main_libraries">Main libraries</a></li>
       </ul>
     </li>
     <li><a href="#Setup">Setup</a></li>
@@ -36,12 +36,23 @@
 
 ## About the project
 
+CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. It allows to quickly select data, simultaneously fit multiple circumferences using the least squares method, and extract pertinent parameters such as center coordinates, radius, and intersection points with the real axis.
+
+To enhance fitting accuracy in the presence of significant noise, several data 'cleaning' methods have been implemented.
+
+This tool can be useful in EIS-related fields as a main analysis method or complementing conventional circuit model fitting approaches by providing reliable reference values.
+
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
-### Libraries
+### Main libraries
+
+pandas
+scipy
+numpy
+matplotlib
+
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
-
 
 ## Setup
 
@@ -51,11 +62,12 @@
    ```
    or download .zip file
 2. Make shure you have python and pip installed
-3. Using your command line change directory to CircEIS
+3. Using command line change directory to CircEIS
    ```sh
    cd path_to_the_project/
    ```
-4. To install all required libraries write for windows:
+4. To install all required libraries
+  for windows:
    ```sh
    pip install -r requirements.txt
    ```
@@ -63,7 +75,7 @@
    ```sh
    pip3 install -r requirements.txt
    ```
-5. After installation, run main.py using command line or your compiler
+5. After installation, run main.py using command line or compiler
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
