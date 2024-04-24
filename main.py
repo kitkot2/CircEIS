@@ -1,17 +1,14 @@
 import pandas as pd
-from matplotlib import pyplot as p, cm, colors
 from numpy import *
 
-import os
-
-#os.rename('data/test11.txt', 'data/test1.csv')
-
 temperature = '120'
-name = 'Ag3VO4-2-2M-'+temperature+'-3-Start1.csv'
+file_name = 'Ag3VO4-2-2M-'+temperature+'-3-Start1 copy'
 
-data = pd.read_csv("data/"+name, delimiter=",")
+from functions import preparation
 
+preparation.EIS_txt(file_name)
 
+data = pd.read_csv("data/"+file_name+".csv", delimiter=",")
 Re = list(data['Re. Ом'])
 Im = list(data['Im. Ом'])#Im
 f = list(data['Частота. Гц'])

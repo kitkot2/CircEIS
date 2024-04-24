@@ -16,5 +16,3 @@ def plot_data(Re : list, Im : list):
     #p.ylim([0, 600000])
 
     p.grid()
-
-    print('ready')
