@@ -1,18 +1,16 @@
-from matplotlib import pyplot as p, cm, colors
+from matplotlib import pyplot as plt
 
 
 def plot_data(Re : list, Im : list):
-
     # draw
-    p.xlabel('ReZ')
-    p.ylabel('-ImZ')
+    plt.xlabel('ReZ')
+    plt.ylabel('-ImZ')
 
 
     # plot data
-    p.plot(Re, Im, 'ro', label='data', ms=4, mec='b', mew=1)
-    p.legend(loc='best',labelspacing=0.1 )
+    plt.plot(Re, Im, 'ro', label='data', ms=4, mec='b', mew=1)
+    plt.legend(loc='best',labelspacing=0.1 )
+    size=(6,3)
+    plt.gcf().set_size_inches(size)
 
-    #p.xlim([0, 1200000])
-    #p.ylim([0, 600000])
-
-    p.grid()
+    plt.grid()
