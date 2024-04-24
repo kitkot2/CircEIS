@@ -2,6 +2,10 @@ import pandas as pd
 from matplotlib import pyplot as p, cm, colors
 from numpy import *
 
+import os
+
+#os.rename('data/test11.txt', 'data/test1.csv')
+
 temperature = '120'
 name = 'Ag3VO4-2-2M-'+temperature+'-3-Start1.csv'
 
