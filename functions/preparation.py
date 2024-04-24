@@ -1,3 +1,4 @@
+import numpy as np
 import os
 import sys
 
@@ -31,7 +32,7 @@ def EIS_txt(file_name : str):
 
     os.rename(txt_path, csv_path)
 
-
+#Not finished
 def DC_txt(file_name : str):
     txt_path = 'data/'+file_name+'.txt'
     csv_path = 'data/'+file_name+'.csv'
@@ -40,3 +41,21 @@ def DC_txt(file_name : str):
         return
     
     print('a')
+    
+    
+def sort_boundaries(boundaries : list):
+    # sort each duple
+    sorted_left_right_list = [sorted(elem) for elem in boundaries]
+    # sort
+    sorted_list = sorted(sorted_left_right_list, key=lambda x: x[0])
+    return sorted_list
+
+def data_slicing(Re : list, Im : list, x_left, x_right):
+    
+    X = np.array(Re)
+    Y = np.array(Im)
+    indices = (X >= x_left) & (X <= x_right)
+    X_sliced = X[indices]
+    Y_sliced = Y[indices]
+    
+    return X_sliced, Y_sliced

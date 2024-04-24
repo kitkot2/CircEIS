@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Cursor
+from functions import preparation
 
 def select_regions(x, y, num_of_circ):
     # Plotting
@@ -43,7 +44,7 @@ def select_regions(x, y, num_of_circ):
                         plt.draw()
 
                         # Saving boundaries
-                        boundaries.append((float(x_left), float(x_right)))
+                        boundaries.append([float(x_left), float(x_right)])
 
                         # Reset boundaries for further selections
                         x_left = None
@@ -59,6 +60,7 @@ def select_regions(x, y, num_of_circ):
 
     plt.show()
 
-    #print("Selected boundaries:")
-    #print(boundaries)
+    # Sort
+    boundaries = preparation.sort_boundaries(boundaries)
+    
     return boundaries
