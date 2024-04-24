@@ -18,3 +18,10 @@ show.plot_data(Re,Im)
 Re, Im = clean.clean_hub(Re,Im)
 print('Cleaned data:')
 show.plot_data(Re,Im)
+
+print('Enter number of circumferences:')
+circ_number = int(input())
+circ_data = []
+
+for i in range(circ_number):
+    print('Choose data for '+str(i+1)+'-th circumference:')
