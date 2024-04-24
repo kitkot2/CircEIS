@@ -1,4 +1,4 @@
-
+from functions import show
 def simple(Re: list, Im : list):
     x, y=[], []
     ReM = 0
@@ -7,6 +7,9 @@ def simple(Re: list, Im : list):
             x.append(Re[i])
             y.append(Im[i])
             ReM = Re[i]
+    
+    print('Cleaned_data:')
+    show.plot_data(x,y)
     return x, y
 
 def clean_hub(Re: list, Im : list):

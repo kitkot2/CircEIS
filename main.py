@@ -1,6 +1,6 @@
 import pandas as pd
 from numpy import *
-from functions import show, preparation, clean
+from functions import show, preparation, clean, circ_analysis
 
 
 temperature = '105'
@@ -16,12 +16,9 @@ f = list(data['Частота. Гц'])
 
 show.plot_data(Re,Im)
 Re, Im = clean.clean_hub(Re,Im)
-print('Cleaned data:')
-show.plot_data(Re,Im)
 
 print('Enter number of circumferences:')
 circ_number = int(input())
-circ_data = []
+data_for_fitting = circ_analysis.select_regions(Re, Im, circ_number)
 
-for i in range(circ_number):
-    print('Choose data for '+str(i+1)+'-th circumference:')
+print(data_for_fitting)
