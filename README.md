@@ -17,10 +17,8 @@
 </div>
 
 
-
-<!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Summary</summary>
+  <summary>Table of contents</summary>
   <ol>
     <li>
       <a href="#About">About</a>
@@ -34,21 +32,15 @@
 </details>
 
 
-
-<!-- ABOUT THE PROJECT -->
 ## About the project
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
-
-
 
 ### Libraries
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
 
-
-<!-- GETTING STARTED -->
 ## Setup
 
 1. Copy repository
@@ -69,7 +61,8 @@
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
-<!-- CONTACT -->
+
+
 ## Contacts
 
 Nikita Kotenko - kotenko.na@phystech.edu
@@ -78,11 +71,6 @@ Project Link: [https://github.com/kitkot2/CircEIS](https://github.com/kitkot2/Ci
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/kitkot2/CircEIS.svg?style=for-the-badge
 [contributors-url]: https://github.com/kitkot2/CircEIS/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/kitkot2/CircEIS.svg?style=for-the-badge
