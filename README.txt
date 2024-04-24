@@ -1,1 +1,1 @@
-Simple tool for EIS analysis by fitting circumferences using least square method
+Circumference fitting works fine, will add circumference data table later
