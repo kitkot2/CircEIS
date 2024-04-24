@@ -52,7 +52,7 @@
    or download .zip file
 2. Make shure you have python and pip installed
 3. Using your command line change directory to CircEIS
-  ```sh
+   ```sh
    cd path_to_the_project/
    ```
 4. To install all required libraries write for windows:
