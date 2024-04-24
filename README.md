@@ -51,7 +51,11 @@
    ```
    or download .zip file
 2. Make shure you have python and pip installed
-3. To install all required libraries write for windows:
+3. Using your command line change directory to CircEIS
+  ```sh
+   cd path_to_the_project/
+   ```
+4. To install all required libraries write for windows:
    ```sh
    pip install -r requirements.txt
    ```
@@ -59,11 +63,9 @@
    ```sh
    pip3 install -r requirements.txt
    ```
-4. After installation, run main.py using command line
+5. After installation, run main.py using command line or your compiler
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
-
-
 
 ## Contacts
 
