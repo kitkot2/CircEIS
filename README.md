@@ -36,7 +36,7 @@
 
 ## About the project
 
-CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. It allows to quickly select data, simultaneously fit multiple circumferences using the least squares method, and extract pertinent parameters such as center coordinates, radius, and intersection points with the real axis.
+CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. It allows user to quickly select data, simultaneously fit multiple circumferences using the least squares method, and extract pertinent parameters such as center coordinates, radius, and intersection points with the real axis.
 
 To enhance fitting accuracy in the presence of significant noise, several data 'cleaning' methods have been implemented.
 
