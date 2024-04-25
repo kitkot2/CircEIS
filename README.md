@@ -42,16 +42,12 @@ To enhance fitting accuracy in the presence of significant noise, several data '
 
 This tool can be useful in EIS-related fields as a main analysis method or as an adittion to conventional circuit model fitting approaches by providing reliable reference values.
 
-<p align="right">(<a href="#readme-top">up</a>)</p>
-
 ### Main libraries
 
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)][Matplotlib-url]
 [![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)][NumPy-url]
 [![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)][Pandas-url]
 [![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)][SciPy-url]
-
-<p align="right">(<a href="#readme-top">up</a>)</p>
 
 ## Setup
 
@@ -75,8 +71,6 @@ This tool can be useful in EIS-related fields as a main analysis method or as an
    pip3 install -r requirements.txt
    ```
 5. After installation, run main.py using command line or compiler
-
-<p align="right">(<a href="#readme-top">up</a>)</p>
 
 ## Contacts
 
