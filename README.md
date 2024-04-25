@@ -46,11 +46,10 @@ This tool can be useful in EIS-related fields as a main analysis method or as an
 
 ### Main libraries
 
-- pandas
-- scipy
-- numpy
-- matplotlib
-
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)][Matplotlib-url]
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)][NumPy-url]
+[![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)][Pandas-url]
+[![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)][SciPy-url]
 
 <p align="right">(<a href="#readme-top">up</a>)</p>
 
@@ -95,3 +94,7 @@ Project Link: [https://github.com/kitkot2/CircEIS](https://github.com/kitkot2/Ci
 [stars-url]: https://github.com/kitkot2/CircEIS/stargazers
 [issues-shield]: https://img.shields.io/github/issues/kitkot2/CircEIS.svg?style=for-the-badge
 [issues-url]: https://github.com/kitkot2/CircEIS/issues
+[Pandas-url]: https://pandas.pydata.org/
+[Matplotlib-url]: https://matplotlib.org/
+[SciPy-url]: https://docs.scipy.org/doc/
+[NumPy-url]: https://numpy.org/
