@@ -2,3 +2,5 @@ venv
 test.py
 functions/__pycache__
 .DS_Store
+exampleData.csv
+data/exampleData.csv

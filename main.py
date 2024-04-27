@@ -10,10 +10,7 @@ file_name = input()
 preparation.correct_path(file_name)
 preparation.EIS_txt_to_csv(file_name)
 
-data = pd.read_csv("data/"+file_name+".csv", delimiter=",")
-Re = list(data['Re. Ом'])
-Im = list(data['Im. Ом'])
-f = list(data['Частота. Гц'])
+f, Re, Im, Z = preparation.read_from_CSV(file_name)
 
 show.plot_data(Re,Im)
 Re, Im = clean.clean_hub(Re,Im)

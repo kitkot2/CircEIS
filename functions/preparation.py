@@ -25,7 +25,6 @@ def EIS_txt_to_csv(file_name : str):
 
     lines = [line.replace('               ', ',') for line in lines]
     lines = [line.replace('  ', '') for line in lines]
-    lines.insert(0, "Частота. Гц,Re. Ом,Im. Ом\n")
 
     with open(txt_path, 'w', encoding='utf-8') as file:
             file.writelines(lines)
@@ -59,3 +58,11 @@ def data_slicing(Re : list, Im : list, x_left, x_right):
     Y_sliced = Y[indices]
     
     return X_sliced, Y_sliced
+
+def read_from_CSV(file_name):
+    data = np.genfromtxt("data/"+file_name+".csv", delimiter=',')
+    Re = list(data[:, 1])
+    Im = list(data[:, 2])
+    f = data[:, 0]
+    Z = data[:, 1] + 1j*data[:, 1]
+    return f, Re, Im, Z
