@@ -14,7 +14,7 @@ def main():
     preparation.EIS_txt_to_csv(file_name)
 
     f, Re, Im, Z = preparation.read_from_CSV_positive_Im(file_name)
-    f, Z = preprocessing.ignoreBelowX(f, Z)
+    #f, Z = preprocessing.ignoreBelowX(f, Z)
     
     # for testing
     # f, Re, Im, Z = preparation.read_from_CSV_ignore_below_X(file_name) #for testing

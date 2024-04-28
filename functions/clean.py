@@ -4,12 +4,13 @@ import numpy as np
 
 def simple(f: np.ndarray, Re: list, Im : list):
     x, y, f_temp =[], [], []
+    f_l = f.tolist()
     ReM = 0
     for i in range(len(Re)):
         if (Re[i] > 0 and Im[i] > 0) and (abs(Im[i] - Im[i-1]) < 100000) and (abs(Re[i] - Re[i-1]) < 100000) and (ReM < Re[i]):
             x.append(Re[i])
             y.append(Im[i])
-            f_temp.append(f[i])
+            f_temp.append(f_l[i])
             ReM = Re[i]
     
     #Redo later
