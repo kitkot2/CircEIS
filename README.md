@@ -9,7 +9,7 @@
 <h3 align="center">CircEIS</h3>
 
   <p align="center">
-    Circumference fitting for EIS
+    Circumference and circuit fitting tool for EIS analysis
     <br />
     <a href="https://github.com/kitkot2/CircEIS"><strong>Files</strong></a>
     <br />
@@ -36,11 +36,11 @@
 
 ## About the project
 
-CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. It allows user to quickly select data, simultaneously fit multiple circumferences using the least squares method, and extract pertinent parameters such as center coordinates, radius, and intersection points with the real axis.
+CiecEIS is designed for Electrochemical Impedance Spectroscopy (EIS) research. It allows user to quickly select data, simultaneously fit multiple circumferences using the least squares method, and extract pertinent parameters such as center coordinates, radius, and intersection points with the real axis. It also uses impedance.py library for equivalent circuit fitting.
 
 To enhance fitting accuracy in the presence of significant noise, several data 'cleaning' methods have been implemented.
 
-This tool can be useful in EIS-related fields as a main analysis method or as an adittion to conventional circuit model fitting approaches by providing reliable reference values.
+This tool can be useful in EIS-related fields. Circumference fitting can provide points for initial guess for your custom circuit models and with a circuit fitting script you can try it out on the spot. 
 
 ### Main libraries
 
