@@ -14,6 +14,9 @@ def circuit_fit(frequencies, Z):
 
     # Fitting
     circuit.fit(frequencies, Z)
+    # For better fit attemp 
+    # circuit.fit(frequencies, Z, circuit, global_opt=True)
+    
     
     # Fitted circuit info
     print(circuit)
