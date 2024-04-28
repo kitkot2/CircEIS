@@ -13,12 +13,14 @@ def main():
     preparation.correct_path(file_name)
     preparation.EIS_txt_to_csv(file_name)
 
-    #f, Re, Im, Z = preparation.read_from_CSV_positive_Im(file_name)
-    #f, Z = preprocessing.ignoreBelowX(f, Z)
-    f, Re, Im, Z = preparation.read_from_CSV_ignore_below_X(file_name) #for testing
+    f, Re, Im, Z = preparation.read_from_CSV_positive_Im(file_name)
+    f, Z = preprocessing.ignoreBelowX(f, Z)
+    
+    # for testing
+    # f, Re, Im, Z = preparation.read_from_CSV_ignore_below_X(file_name) #for testing
     
     show.plot_data(Re,Im)
-    Re, Im, Z = clean.clean_hub(Re,Im, Z)
+    f, Re, Im, Z = clean.clean_hub(f, Re,Im, Z)
 
     print("Do you want to fit circumference in your data (1) or play with circuits?(2)")
 

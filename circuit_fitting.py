@@ -18,7 +18,12 @@ def circuit_fit(frequencies, Z):
     # Fitted circuit info
     print(circuit)
 
+    # circuit.plot(f_data=frequencies, Z_data=Z)
     
     circuit.plot(f_data=frequencies, Z_data=Z, kind='nyquist')
-    plt.legend(['Data', 'Fit'])
     plt.show()
+    
+    circuit.plot(f_data=frequencies, Z_data=Z, kind='bode')
+    plt.show()
+    # plt.legend(['Data', 'Fit'])
+    
