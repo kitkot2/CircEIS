@@ -4,3 +4,4 @@ functions/__pycache__
 .DS_Store
 exampleData.csv
 data/exampleData.csv
+__pycache__
