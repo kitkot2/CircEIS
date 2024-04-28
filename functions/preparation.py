@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import sys
+from impedance import preprocessing
 
 def correct_path(file_name : str):
     txt_path = 'data/'+file_name+'.txt'
@@ -59,10 +60,27 @@ def data_slicing(Re : list, Im : list, x_left, x_right):
     
     return X_sliced, Y_sliced
 
-def read_from_CSV(file_name):
+def read_from_CSV_positive_Im(file_name):
     data = np.genfromtxt("data/"+file_name+".csv", delimiter=',')
+    f = data[:, 0]
+    Z = data[:, 1] - 1j*data[:, 2]
     Re = list(data[:, 1])
     Im = list(data[:, 2])
+    return f, Re, Im, Z
+
+def read_from_CSV(file_name):
+    data = np.genfromtxt("data/"+file_name+".csv", delimiter=',')
     f = data[:, 0]
     Z = data[:, 1] + 1j*data[:, 2]
+    Re = list(np.real(Z))
+    Im = list(-np.imag(Z))
+    return f, Re, Im, Z
+
+def read_from_CSV_ignore_below_X(file_name):
+    data = np.genfromtxt("data/"+file_name+".csv", delimiter=',')
+    f = data[:, 0]
+    Z = data[:, 1] + 1j*data[:, 2]
+    f, Z = preprocessing.ignoreBelowX(f, Z)
+    Re = list(np.real(Z))
+    Im =list(-np.imag(Z))
     return f, Re, Im, Z

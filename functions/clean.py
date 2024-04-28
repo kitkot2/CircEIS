@@ -14,7 +14,7 @@ def simple(Re: list, Im : list):
     #Redo later
     x_t = np.array(x)
     y_t = np.array(y)
-    Z = x_t + 1j*y_t
+    Z = x_t - 1j*y_t
     
     print('Cleaned_data:')
     show.plot_data(x,y)
@@ -30,7 +30,7 @@ def lfilter_scipy(x: list, y : list):
     show.plot_data(x,yy)
     return x, yy
 
-def clean_hub(Re: list, Im : list):
+def clean_hub(Re: list, Im : list, Z):
     print('To clean data enter 1, else enter 0')
     fl = int(input())
     if fl == 1:
@@ -38,4 +38,4 @@ def clean_hub(Re: list, Im : list):
     elif fl == 2:
         return lfilter_scipy(Re, Im)
     else:
-        return Re, Im
+        return Re, Im, Z

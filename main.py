@@ -1,6 +1,7 @@
 from functions import show, preparation, clean
 from circumference_fitting import circumference_fit
 from circuit_fitting import circuit_fit
+from impedance import preprocessing
 
 def main():
     #temperature = '105'
@@ -12,10 +13,12 @@ def main():
     preparation.correct_path(file_name)
     preparation.EIS_txt_to_csv(file_name)
 
-    f, Re, Im, Z = preparation.read_from_CSV(file_name)
-
+    #f, Re, Im, Z = preparation.read_from_CSV_positive_Im(file_name)
+    #f, Z = preprocessing.ignoreBelowX(f, Z)
+    f, Re, Im, Z = preparation.read_from_CSV_ignore_below_X(file_name) #for testing
+    
     show.plot_data(Re,Im)
-    Re, Im, Z = clean.clean_hub(Re,Im)
+    Re, Im, Z = clean.clean_hub(Re,Im, Z)
 
     print("Do you want to fit circumference in your data (1) or play with circuits?(2)")
 
