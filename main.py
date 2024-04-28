@@ -22,7 +22,7 @@ def main():
     show.plot_data(Re,Im)
     f, Re, Im, Z = clean.clean_hub(f, Re,Im, Z)
 
-    print("Do you want to fit circumference in your data (1) or play with circuits?(2)")
+    print("Do you want to fit circumference in your data (1) or play with circuits (2)?")
 
     answer = int(input())
 
