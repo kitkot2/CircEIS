@@ -13,7 +13,7 @@ preparation.EIS_txt_to_csv(file_name)
 f, Re, Im, Z = preparation.read_from_CSV(file_name)
 
 show.plot_data(Re,Im)
-Re, Im = clean.clean_hub(Re,Im)
+Re, Im, Z = clean.clean_hub(Re,Im)
 
 print('Enter number of circumferences:')
 circ_number = int(input())

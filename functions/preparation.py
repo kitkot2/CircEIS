@@ -64,5 +64,5 @@ def read_from_CSV(file_name):
     Re = list(data[:, 1])
     Im = list(data[:, 2])
     f = data[:, 0]
-    Z = data[:, 1] + 1j*data[:, 1]
+    Z = data[:, 1] + 1j*data[:, 2]
     return f, Re, Im, Z

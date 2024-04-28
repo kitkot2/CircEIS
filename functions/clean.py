@@ -1,5 +1,6 @@
 from functions import show
 from scipy.signal import lfilter
+import numpy as np
 
 def simple(Re: list, Im : list):
     x, y=[], []
@@ -10,9 +11,14 @@ def simple(Re: list, Im : list):
             y.append(Im[i])
             ReM = Re[i]
     
+    #Redo later
+    x_t = np.array(x)
+    y_t = np.array(y)
+    Z = x_t + 1j*y_t
+    
     print('Cleaned_data:')
     show.plot_data(x,y)
-    return x, y
+    return x, y, Z
 
 # Not working
 def lfilter_scipy(x: list, y : list):
