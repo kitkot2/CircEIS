@@ -1,7 +1,6 @@
 from functions import show, preparation, clean
-from circumference_fitting import circumference_fit
-from circuit_fitting import circuit_fit
-from impedance import preprocessing
+from scripts.circumference_fitting import circumference_fit
+from scripts.circuit_fitting import circuit_fit
 
 def main():
     #temperature = '105'
