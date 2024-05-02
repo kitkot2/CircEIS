@@ -65,10 +65,9 @@ def circuferences_p(circ_data : list):
     results = []
 
     for x, y, R in circ_data:
-        result = math.right_intersection_with_ox(x, y, R)
-        results.append(result)
+        l,r = math.intersections_with_ox(x, y, R)
+        results.append({'x_c': x, 'y_c': y, 'Radius': R, 'R_l, Ohm': l, 'R_r, Ohm': r})
 
-    df = pd.DataFrame(circ_data, index=range(1, len(circ_data) + 1),columns=['x_c', 'y_c', 'Radius'])
-    df['R, Ohm'] = results
+    df = pd.DataFrame(results)
 
     print(df)
